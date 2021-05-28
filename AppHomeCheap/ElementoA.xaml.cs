@@ -50,29 +50,8 @@ namespace AppHomeCheap
 			txtDetalle.Text = DetSeleccionado;
 		}
 
-
-
-		public static IEnumerable<Arriendos> Delete(SQLiteConnection db, int id)
+		private void btnActualizado_Clicked(object sender, EventArgs e)
 		{
-
-			return db.Query<Arriendos>("DELETE FROM Arriendos where Id = ?", id);
-
-		}
-
-
-
-		public static IEnumerable<Arriendos> Update(SQLiteConnection db, string titulo, string direccion, string precio, string telefonos, string detallle, int id)
-		{
-
-			return db.Query<Arriendos>("UPDATE Arriendos SET Titulo = ?, Direccion = ?," +
-				"Precio = ?, Telefonos = ?, Detallle = ? WHERE Id = ?", titulo, direccion, precio, telefonos, detallle, id);
-		}
-
-
-		private void btnActualizar_Clicked(object sender, EventArgs e)
-		{
-
-
 			try
 			{
 				var databasePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "homecheap.db3");
@@ -95,13 +74,10 @@ namespace AppHomeCheap
 				DisplayAlert("Alerta", "Error" + ex.Message, "OK");
 			}
 
-
-
 		}
 
-		private void btnEliminar_Clicked(object sender, EventArgs e)
+		private void btnEliminado_Clicked(object sender, EventArgs e)
 		{
-
 			try
 			{
 				var databasePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "homecheap.db3");
@@ -124,5 +100,24 @@ namespace AppHomeCheap
 			}
 
 		}
+
+		public static IEnumerable<Arriendos> Delete(SQLiteConnection db, int id)
+		{
+
+			return db.Query<Arriendos>("DELETE FROM Arriendos where Id = ?", id);
+
+		}
+
+
+
+		public static IEnumerable<Arriendos> Update(SQLiteConnection db, string titulo, string direccion, string precio, string telefonos, string detallle, int id)
+		{
+
+			return db.Query<Arriendos>("UPDATE Arriendos SET Titulo = ?, Direccion = ?," +
+				"Precio = ?, Telefonos = ?, Detallle = ? WHERE Id = ?", titulo, direccion, precio, telefonos, detallle, id);
+		}
+
+
+		
 	}
 }

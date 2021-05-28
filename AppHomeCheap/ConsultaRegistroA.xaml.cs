@@ -24,7 +24,7 @@ namespace AppHomeCheap
 		public ConsultaRegistroA()
 		{
 		
-			InitializeComponent1();
+			InitializeComponent();
 			_conn = DependencyService.Get<Database>().GetConnection();
 		}
 

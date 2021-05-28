@@ -15,12 +15,12 @@ namespace AppHomeCheap
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Arriendo : ContentPage
 	{
-		private SQLiteAsyncConnection _conn;
+		private SQLiteAsyncConnection _con;
 
 		public Arriendo()
 		{
 			InitializeComponent();
-			_conn = DependencyService.Get<Database>().GetConnection();
+			_con = DependencyService.Get<Database>().GetConnection();
 		}
 
 		private void btnRegistroA_Clicked(object sender, EventArgs e)
@@ -28,7 +28,7 @@ namespace AppHomeCheap
 			try
 			{
 				var Datos = new Arriendos { Titulo = txtTitulo.Text, Direccion = txtDireccion.Text, Precio = txtPrecio.Text, Telefonos = txtTelefonos.Text, Detallle = txtDetallle.Text };
-				_conn.InsertAsync(Datos);
+				_con.InsertAsync(Datos);
 
 				txtTitulo.Text = "";
 				txtDireccion.Text = "";

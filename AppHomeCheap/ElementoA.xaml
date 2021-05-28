@@ -5,7 +5,8 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="White" Margin="20">
             
-            <Label Text="Usuarios Registrados" FontSize="39" HorizontalOptions="Start" FontFamily="TM" Margin="10" />
+            <Label Text="Publicaciones" FontSize="39" HorizontalOptions="Start" FontFamily="TM" Margin="10" />
+            
 
             <Entry x:Name="txtTitulo" Placeholder="Ingresar título" FontSize="20" FontAttributes="Bold" TextColor="Gray"/>
             <Entry x:Name="txtDireccion" Placeholder="Ingresar dirección" FontSize="20" FontAttributes="Bold" TextColor="Gray"/>
@@ -15,28 +16,30 @@
 
 
             <StackLayout Margin="40,10">
-                <Button x:Name="btnActualizar"
+                <Button x:Name="btnActualizado"
                     Text="Actualizar"
                     TextColor="White"
                     FontSize="22"
-                    BackgroundColor="ForestGreen"
+                    BackgroundColor="White"
                     CornerRadius="60"
-                    HeightRequest="55"
+                    HeightRequest="-0"
                     FontFamily="TM"
                     Margin="0,5"
-                     Clicked="btnActualizar_Clicked"/>
+                       
+                     Clicked="btnActualizado_Clicked"/>
 
 
-                <Button x:Name="btnEliminar"
+                <Button x:Name="btnEliminado"
                     Text="Eliminar"
                     TextColor="White"
                     FontSize="22"
-                    BackgroundColor="#FFCA2424"
+                    BackgroundColor="White"
                     CornerRadius="60"
-                    HeightRequest="55"
+                    HeightRequest="-0"
                     FontFamily="TM"
                     Margin="0,5"
-                    Clicked="btnEliminar_Clicked"/>
+                   
+                    Clicked="btnEliminado_Clicked"/>
 
             </StackLayout>
             

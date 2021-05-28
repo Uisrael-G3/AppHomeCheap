@@ -38,7 +38,7 @@ namespace AppHomeCheap
 
 
 
-				DisplayAlert("Mensaje", "Usuario Registrado", "OK");
+				DisplayAlert("Alerta", "Usuario Registrado", "OK");
 
 
 			}

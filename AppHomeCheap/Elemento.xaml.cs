@@ -76,7 +76,7 @@ namespace AppHomeCheap
 
 				ResultadoUpdate = Update(db, txtNombre.Text, txtApellido.Text, txtContrasena.Text, txtCorreo.Text , txtCelular.Text, IdSeleccionado);
 
-				DisplayAlert("Mensaje", "Dato actualizado", "OK");
+				DisplayAlert("Alerta", "Dato actualizado", "OK");
 
 
 				txtNombre.Text = "";
@@ -102,7 +102,7 @@ namespace AppHomeCheap
 				var db = new SQLiteConnection(databasePath);
 
 				ResultadoDelete = Delete(db, IdSeleccionado);
-				DisplayAlert("Mensaje", "Usuario eliminado correctamente", "OK");
+				DisplayAlert("Alerta", "Usuario eliminado correctamente", "OK");
 
 				
 				txtNombre.Text = "";

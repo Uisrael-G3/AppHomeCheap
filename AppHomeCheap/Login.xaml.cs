@@ -1,4 +1,5 @@
-﻿using AppHomeCheap.Models;
+﻿using AppHomeCheap.Model;
+using AppHomeCheap.Models;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -39,6 +40,8 @@ namespace AppHomeCheap
 				var documentPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "homecheap.db3");
 				var db = new SQLiteConnection(documentPath);
 				db.CreateTable<Usuario>();
+				db.CreateTable<Arriendos>();
+
 				IEnumerable<Usuario> resultado = SELECT_WHERE(db, txtUsuario.Text, txtClave.Text);
 
 				txtUsuario.Text = "";
@@ -52,7 +55,7 @@ namespace AppHomeCheap
 				}
 				else
 				{
-					DisplayAlert("Mensaje", "Usuario no registrado", "OK");
+					DisplayAlert("Alerta", "Usuario no registrado", "OK");
 				}
 			}
 			catch (Exception)
@@ -74,7 +77,7 @@ namespace AppHomeCheap
 
 		private async void btnBuscar_Clicked(object sender, EventArgs e)
 		{
-            await Navigation.PushAsync(new Vista());
+            await Navigation.PushAsync(new ConsultaRegistroA());
 		}
 	}
 }
