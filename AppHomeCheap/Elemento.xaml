@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppHomeCheap.Elemento">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" Margin="20">
+
+            <Label Text="Usuarios Registrados" FontSize="39" HorizontalOptions="Start" FontFamily="TM" Margin="10" />
+
+            <Entry x:Name="txtNombre" Placeholder="Ingresar nombre" FontSize="20" FontAttributes="Bold" TextColor="Gray"/>
+            <Entry x:Name="txtApellido" Placeholder="Ingresar apellido" FontSize="20" FontAttributes="Bold" TextColor="Gray"/>
+            <Entry x:Name="txtContrasena" Placeholder="Ingresar contraseña" FontSize="20" FontAttributes="Bold" TextColor="#FF074B98"/>
+            <Entry x:Name="txtCorreo" Placeholder="Ingresar correo" FontSize="20" FontAttributes="Bold" TextColor="Gray"/>
+            <Entry x:Name="txtCelular" Placeholder="Ingresar número celular" FontSize="20" FontAttributes="Bold" TextColor="Gray"/>
+
+            <StackLayout Margin="40,10">
+                <Button x:Name="btnActualizar"
+                    Text="Actualizar"
+                    TextColor="White"
+                    FontSize="22"
+                    BackgroundColor="ForestGreen"
+                    CornerRadius="60"
+                    HeightRequest="55"
+                    FontFamily="TM"
+                    Margin="0,5"
+                    Clicked="btnActualizar_Clicked"/>
+
+
+                <Button x:Name="btnEliminar"
+                    Text="Eliminar"
+                    TextColor="White"
+                    FontSize="22"
+                    BackgroundColor="#FFCA2424"
+                    CornerRadius="60"
+                    HeightRequest="55"
+                    FontFamily="TM"
+                    Margin="0,5"
+                    Clicked="btnEliminar_Clicked"/>
+
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppHomeCheap.ConsultaRegistro">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" Margin="20" >
+            <Image Source="https://1.bp.blogspot.com/-gqGVfLzatWA/YJoiD85krXI/AAAAAAAAAgo/nWWvOQFhijQNrC_kcT9hv37C0qzlpU0cgCPcBGAsYHg/s295/ImageMedia.png" HeightRequest="90" HorizontalOptions="Start" />
+
+            <Label Text="Lista de Usuarios" FontSize="39" HorizontalOptions="Center" FontFamily="TM" Margin="10"/>
+
+            <ListView x:Name="ListaUsuarios" ItemSelected="OnSelection" >
+
+                <ListView.ItemTemplate>
+                    <DataTemplate  >
+                        <TextCell TextColor="Black" DetailColor="ForestGreen" Text="{Binding Nombre}" Detail="{Binding Apellido}">
+                            
+                        </TextCell>
+
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

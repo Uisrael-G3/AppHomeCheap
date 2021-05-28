@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppHomeCheap.Opciones"
+             NavigationPage.HasNavigationBar = "False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" Margin="20">
+            <Image Source="https://1.bp.blogspot.com/-QaeSeWRJ_ns/YJoiARN2VEI/AAAAAAAAAgk/uHzElcGqKi4Q1YcU4ib9omxdQr9VC-oJwCPcBGAsYHg/s442/ImageLogin.png" />
+            
+
+            <Label Text="Menú de Opciones" FontSize="39" HorizontalOptions="Start" FontFamily="TM" Margin="10" />
+
+            <Button x:Name="btnEditar"
+                    Text="Editar Perfil"
+                    TextColor="White"
+                    FontSize="22"
+                    BackgroundColor="#FF074B98"
+                    CornerRadius="60"
+                    HeightRequest="60"
+                    FontFamily="TM"
+                    Margin="0,5" Clicked="btnEditar_Clicked"/>
+
+            <Button x:Name="btnEditarPubli"
+                    Text="Editar Publicaciones"
+                    TextColor="White"
+                    FontSize="22"
+                    BackgroundColor="#2196F3"
+                    CornerRadius="60"
+                    HeightRequest="60"
+                    FontFamily="TM"
+                    Margin="0,5" Clicked="btnEditarPubli_Clicked"/>
+
+            <Button x:Name="btnCrearPubli"
+                    Text="Crear Publicación"
+                    TextColor="White"
+                    FontSize="22"
+                    BackgroundColor="#FF074B98"
+                    CornerRadius="60"
+                    HeightRequest="60"
+                    FontFamily="TM"
+                    Margin="0,5" Clicked="btnCrearPubli_Clicked"/>
+
+        
+            <Button
+                
+                    Text="Soporte o Denuncias"
+                    TextColor="White"
+                    FontSize="22"
+                    BackgroundColor="ForestGreen"
+                    HeightRequest="60"
+                    CornerRadius="60"
+                    FontFamily="TM"
+                    Clicked="OpenWhatsApp"/>
+            
+
+            <Button x:Name="btnSalir"
+                    Text="Cerrar Sesión"
+                    TextColor="White"
+                    FontSize="22"
+                    BackgroundColor="#FFCA2424"
+                    CornerRadius="60"
+                    HeightRequest="60"
+                    FontFamily="TM"
+                    Margin="0,5" Clicked="btnSalir_Clicked"/>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

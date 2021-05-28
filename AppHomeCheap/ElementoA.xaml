@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppHomeCheap.ElementoA">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" Margin="20">
+            
+            <Label Text="Usuarios Registrados" FontSize="39" HorizontalOptions="Start" FontFamily="TM" Margin="10" />
+
+            <Entry x:Name="txtTitulo" Placeholder="Ingresar título" FontSize="20" FontAttributes="Bold" TextColor="Gray"/>
+            <Entry x:Name="txtDireccion" Placeholder="Ingresar dirección" FontSize="20" FontAttributes="Bold" TextColor="Gray"/>
+            <Entry x:Name="txtPrecio" Placeholder="Ingresar precio" FontSize="20" FontAttributes="Bold" TextColor="Gray"/>
+            <Entry x:Name="txtTelefonos" Placeholder="Ingresar teléfonos" FontSize="20" FontAttributes="Bold" TextColor="Gray"/>
+            <Entry x:Name="txtDetalle" Placeholder="Ingresar detalle" FontSize="20" FontAttributes="Bold" TextColor="Gray"/>
+
+
+            <StackLayout Margin="40,10">
+                <Button x:Name="btnActualizar"
+                    Text="Actualizar"
+                    TextColor="White"
+                    FontSize="22"
+                    BackgroundColor="ForestGreen"
+                    CornerRadius="60"
+                    HeightRequest="55"
+                    FontFamily="TM"
+                    Margin="0,5"
+                     Clicked="btnActualizar_Clicked"/>
+
+
+                <Button x:Name="btnEliminar"
+                    Text="Eliminar"
+                    TextColor="White"
+                    FontSize="22"
+                    BackgroundColor="#FFCA2424"
+                    CornerRadius="60"
+                    HeightRequest="55"
+                    FontFamily="TM"
+                    Margin="0,5"
+                    Clicked="btnEliminar_Clicked"/>
+
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

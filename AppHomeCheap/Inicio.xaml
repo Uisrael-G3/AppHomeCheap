@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppHomeCheap.MainPage">
+
+    <StackLayout BackgroundColor="White">
+
+        <Image Source="https://1.bp.blogspot.com/-w2c63k6zdrc/YJoh8e_x7nI/AAAAAAAAAgg/HdpSxpS3nBwuQyRFj0PCD5AwnRmvshBVACPcBGAsYHg/s764/ImageHome.png"/>
+
+
+        <Label  Text="Tu nuevo hogar será el mejor lugar" FontSize="40" 
+               Padding="30,0" HorizontalTextAlignment="Center" FontFamily="TM" 
+               TextColor= "DimGray" FontAttributes="Bold" />
+
+
+
+
+        <StackLayout Margin="60,60">
+
+            <Image Source="https://image.freepik.com/vector-gratis/hotel-o-motel-vector-edificio-ciudad-ciudad-ilustracion-dibujos-animados-plana-aislado-sobre-fondo-blanco_212005-309.jpg" Margin="-56"/>
+
+            <Button x:Name="btnInicio"
+                    Text="Continuar"
+                    TextColor="White"
+                    FontSize="25"
+                    BackgroundColor="#2196F3"
+                    CornerRadius="60"
+                    HeightRequest="60"
+                    FontFamily="TM"
+                    Margin="10,30"
+                    Clicked="btnInicio_Clicked"
+                />
+
+        </StackLayout>
+
+    </StackLayout>
+    
+</ContentPage>

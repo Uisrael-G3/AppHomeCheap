@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppHomeCheap.Arriendo">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" Margin="20">
+            <Image Source="https://1.bp.blogspot.com/-gqGVfLzatWA/YJoiD85krXI/AAAAAAAAAgo/nWWvOQFhijQNrC_kcT9hv37C0qzlpU0cgCPcBGAsYHg/s295/ImageMedia.png" HeightRequest="90" HorizontalOptions="Start" />
+
+            <Entry x:Name="txtTitulo" Placeholder="Título de la publicación" FontSize="20" FontAttributes="Bold" TextColor="Gray"/>
+            <Entry x:Name="txtDireccion" Placeholder="Ingresar dirección" FontSize="20" FontAttributes="Bold" TextColor="Gray"/>
+            <Entry x:Name="txtPrecio" Placeholder="Ingresar precio" FontSize="20" FontAttributes="Bold" TextColor="#FF074B98"/>
+            <Entry x:Name="txtTelefonos" Placeholder="Ingresar teléfonos" FontSize="20" FontAttributes="Bold" TextColor="Gray"/>
+            <Entry x:Name="txtDetallle" Placeholder="Detalle Adicional" FontSize="20" FontAttributes="Bold" TextColor="Gray"/>
+
+
+            <StackLayout Margin="40,10">
+            <Button x:Name="btnRegistroA"
+                    Text="Registrar"
+                    TextColor="White"
+                    FontSize="22"
+                    BackgroundColor="#2196F3"
+                    CornerRadius="60"
+                    HeightRequest="55"
+                    FontFamily="TM"
+                    Margin="0,9" 
+                    Clicked="btnRegistroA_Clicked"/>
+
+        </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
